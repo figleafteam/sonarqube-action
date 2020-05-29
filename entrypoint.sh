@@ -12,6 +12,7 @@ fi
 
 sonar-scanner \
   -Dsonar.projectKey=${INPUT_APP} \
+  -Dsonar.projectName=${INPUT_APP} \
   -Dsonar.sources=. \
   -Dsonar.host.url=${INPUT_HOST} \
   -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
