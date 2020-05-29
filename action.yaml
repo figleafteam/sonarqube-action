@@ -1,6 +1,6 @@
 name: 'SonarQube Scan'
 description: 'Scan your code with SonarQube Scanner to detect bugs, vulnerabilities and code smells in more than 25 programming languages.'
-author: 'Dwi Siswanto'
+author: 'Valentyn Nastenko'
 branding:
   icon: 'check'
   color: 'green'
@@ -21,3 +21,7 @@ inputs:
   password:
     description: 'Password that goes with the sonar.login username. This should be left blank if an authentication token is being used.'
     required: false
+  app:
+    description: 'Application name'
+    required: true
+
