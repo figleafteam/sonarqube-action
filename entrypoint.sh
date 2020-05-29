@@ -11,7 +11,7 @@ if [[ "${GITHUB_EVENT_NAME}" == "pull_request" ]]; then
 fi
 
 sonar-scanner \
-  -Dsonar.projectKey="$INPUT_APP" \
+  -Dsonar.projectKey=${INPUT_APP} \
   -Dsonar.sources=. \
   -Dsonar.host.url=${INPUT_HOST} \
   -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
