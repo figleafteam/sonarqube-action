@@ -28,6 +28,8 @@ jobs:
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
+        projectBaseDir: ${{ secrets.PROJECT_BASE_DIR }}
+        app: ${{ secrets.APPLICATION_NAME }}
 ```
 
 You can change the analysis base directory by using the optional input `projectBaseDir` like this:
